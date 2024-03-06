@@ -1,0 +1,142 @@
+
+:root {
+    --bg: #14161C;
+    --yellow: #F9FF00;
+    --white: #fff;
+    --border-color: #585858;
+
+    --notification-green-text: #2B5028;
+    --notification-green-bg: #538D4E;
+
+    --notification-red-text: #5F0F1D;
+    --notification-red-bg: #BA4747;
+
+    --letter-green-bg: #538D4E;
+    --letter-yellow-bg: #B59F3B;
+    --letter-gray-bg: #585858;
+
+    --keyboard-gray-light: #818384;
+    --keyboard-gray-dark: #585858;
+}
+
+*{
+    border: 0;
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#titulo {
+    margin-top: 60px;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+html, body{
+    height: 100%;
+    background-color: var(--bg);
+    text-align: center;
+}
+
+.header {
+    border-bottom: 1px solid var(--border-color);
+    height: 80px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    margin: 0 auto;
+    max-width: 992px;
+}
+
+#board{
+    width: 350px;
+    height: 420px;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.tile{
+ border: 2px solid lightgray;
+ width: 60px;
+ height: 60px;
+ margin: 2.5px;
+
+ color: white;
+ font-size: 36px;
+ font-weight: bold;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#keyboard-container {
+    height: 200px;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .keyboard-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 8px;
+    touch-action: manipulation;
+  }
+  
+  .keyboard-row button {
+    font-family: inherit;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    height: 58px;
+    cursor: pointer;
+    background-color: rgb(129, 131, 132);
+    color: rgb(215, 218, 220);
+    flex-grow: 1;
+    text-transform: uppercase;
+    margin-right: 6px;
+    border-radius: 4px;
+    user-select: none;
+  }
+  
+  .keyboard-row button.wide-button {
+    flex-grow: 1.5;
+  }
+  
+  .spacer-half {
+    flex-grow: 0.5;
+  }
+
+.correto{
+    background-color: green;
+    color: white;
+    border-color: white;
+}
+
+.presente{
+    background-color: yellow;
+    color: white;
+    border-color: white;
+}
+
+.ausente{
+    background-color: grey;
+    color: white;
+    border-color: white;
+}
+
